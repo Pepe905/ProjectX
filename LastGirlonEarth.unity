@@ -321,11 +321,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< HEAD
-  m_Offset: {x: -1.8682904, y: 0.015766382}
-=======
   m_Offset: {x: -1.8682904, y: 0.060021162}
->>>>>>> Initial Commit
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -336,11 +332,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 0.76350594, y: 2.702744}
-=======
   m_Size: {x: 0.76350594, y: 2.7912536}
->>>>>>> Initial Commit
   m_EdgeRadius: 0
 --- !u!114 &502946650
 MonoBehaviour:
@@ -481,20 +473,12 @@ PrefabInstance:
     - target: {fileID: 61346583712760016, guid: 3248535f6a2562c489a1223a75951ef2,
         type: 3}
       propertyPath: m_Offset.y
-<<<<<<< HEAD
-      value: 0.0057851374
-=======
       value: -0.01846239
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 61346583712760016, guid: 3248535f6a2562c489a1223a75951ef2,
         type: 3}
       propertyPath: m_Size.y
-<<<<<<< HEAD
-      value: 0.7211239
-=======
       value: 0.7696189
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 61346583712760016, guid: 3248535f6a2562c489a1223a75951ef2,
         type: 3}
@@ -783,11 +767,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< HEAD
-  m_Offset: {x: 0.11177217, y: 0.0057851374}
-=======
   m_Offset: {x: 0.11177217, y: -0.01846239}
->>>>>>> Initial Commit
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -798,11 +778,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 0.19504102, y: 0.7211239}
-=======
   m_Size: {x: 0.19504102, y: 0.7696189}
->>>>>>> Initial Commit
   m_EdgeRadius: 0
 --- !u!50 &1134031805
 Rigidbody2D:
@@ -956,11 +932,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< HEAD
-  m_Offset: {x: 2.3255105, y: 1.4583945}
-=======
   m_Offset: {x: 2.3949344, y: 1.4583945}
->>>>>>> Initial Commit
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -971,11 +943,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 7.4483633, y: 0.19597816}
-=======
   m_Size: {x: 7.3095155, y: 0.19597816}
->>>>>>> Initial Commit
   m_EdgeRadius: 0
 --- !u!1 &1301386691
 GameObject:
@@ -1057,10 +1025,7 @@ Transform:
   - {fileID: 1524278313}
   - {fileID: 1205874745}
   - {fileID: 502946648}
-<<<<<<< HEAD
-=======
   - {fileID: 1815413796}
->>>>>>> Initial Commit
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1126,11 +1091,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-<<<<<<< HEAD
-    m_TransformParent: {fileID: 1930576093}
-=======
     m_TransformParent: {fileID: 1301386693}
->>>>>>> Initial Commit
     m_Modifications:
     - target: {fileID: 532409100696270070, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
@@ -1140,11 +1101,7 @@ PrefabInstance:
     - target: {fileID: 532409100696270070, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_IsActive
-<<<<<<< HEAD
-      value: 0
-=======
       value: 1
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270070, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
@@ -1154,20 +1111,12 @@ PrefabInstance:
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
-      value: -86.68702
-=======
       value: 0.7546348
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
-      value: 111.826454
-=======
       value: -0.5126913
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
@@ -1197,11 +1146,7 @@ PrefabInstance:
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 0
-=======
       value: 3
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
@@ -1221,34 +1166,22 @@ PrefabInstance:
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_LocalScale.x
-<<<<<<< HEAD
-      value: 1
-=======
       value: 0.03256176
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_LocalScale.y
-<<<<<<< HEAD
-      value: 1
-=======
       value: 0.03028995
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.57605743
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     - target: {fileID: 532409100696270065, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_Enabled
-<<<<<<< HEAD
-      value: 1
-=======
       value: 0
->>>>>>> Initial Commit
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 532409100696270067, guid: f4c48355fecb1374e9f7c2f4b212128c, type: 3}
@@ -1260,15 +1193,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1634784612}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!4 &1815413796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 532409100696270064, guid: f4c48355fecb1374e9f7c2f4b212128c,
     type: 3}
   m_PrefabInstance: {fileID: 1634784612}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Initial Commit
 --- !u!114 &1815413798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,14 +1322,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 532409100696270065, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
->>>>>>> Initial Commit
     - target: {fileID: 532409100696270067, guid: f4c48355fecb1374e9f7c2f4b212128c,
         type: 3}
       propertyPath: ontrophy
