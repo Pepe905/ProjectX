@@ -46,6 +46,12 @@ TagManager:
   - name: Background
     uniqueID: 2883743715
     locked: 0
+  - name: ForBackground
+    uniqueID: 588492105
+    locked: 0
   - name: Character
     uniqueID: 2745939889
+    locked: 0
+  - name: Forground
+    uniqueID: 3383381287
     locked: 0
