@@ -89,6 +89,7 @@ public class Ashley : MonoBehaviour
 
                                         if (Input.GetButtonDown("Fire1") && !isAttacking)
                                         isAttacking = true;
+                                        
 
                                         if (isAttacking)
                                         {
@@ -102,6 +103,7 @@ public class Ashley : MonoBehaviour
                                                 Ammo.GetComponent<Rigidbody2D>().AddForce(Vector3.right * Ammospeed);
 
                                             isAttacking = false;
+                                            
                                         }
 
 
