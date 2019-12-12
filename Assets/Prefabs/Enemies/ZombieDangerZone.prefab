@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8463442314750256072}
   - component: {fileID: 6416101056462965294}
   m_Layer: 0
-  m_Name: Zombie
+  m_Name: ZombieDangerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05, y: 0.02}
+  m_Offset: {x: -0.7626314, y: -0.47149903}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -59,7 +59,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.74, y: 1.14}
+  m_Size: {x: 4.165263, y: 0.15700197}
   m_EdgeRadius: 0
 --- !u!50 &8463442314750256072
 Rigidbody2D:
@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 3621269578181621398}
   - component: {fileID: 8466444301127909657}
   - component: {fileID: 6110925785881703069}
+  - component: {fileID: 1301176978806838822}
   - component: {fileID: 8407222813151363819}
   m_Layer: 8
   m_Name: Enemy
@@ -166,8 +167,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1549027407
+  m_SortingLayer: 3
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 9353fc0809a0ae24eaa4001913f319a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -193,9 +194,22 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25, y: 0.0075562}
-  m_Size: {x: 1.98, y: 4.23}
+  m_Offset: {x: -0.4023553, y: -0.07547422}
+  m_Size: {x: 3.810351, y: 3.8234632}
   m_Direction: 0
+--- !u!114 &1301176978806838822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649553169799777117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fabe5b71e7d42f44a142421ea4ff491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!95 &8407222813151363819
 Animator:
   serializedVersion: 3
@@ -260,9 +274,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4, y: 0.16}
+  m_Offset: {x: -0.393395, y: 0.16000003}
   serializedVersion: 2
-  m_Radius: 1.94
+  m_Radius: 1.9069468
 --- !u!114 &2162197500627083190
 MonoBehaviour:
   m_ObjectHideFlags: 0
