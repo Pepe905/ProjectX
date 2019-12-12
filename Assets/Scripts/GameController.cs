@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void RestartGame(){
-		SceneManager.LoadScene("Main");
+		//SceneManager.LoadScene("Main");
+		SceneManager.LoadScene(LGOE_Scene.Menu_Main);
 	}
 }
