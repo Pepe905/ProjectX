@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5150166911131169232}
   - component: {fileID: 7947707253257135202}
   - component: {fileID: 6220926781020471257}
+  - component: {fileID: 7285115795187179685}
   m_Layer: 0
   m_Name: Auto 1_asset
   m_TagString: Untagged
@@ -88,7 +89,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5849337849625292639}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -118,3 +119,19 @@ EdgeCollider2D:
   - {x: 2.791011, y: -4.5156813}
   - {x: 1.986779, y: -3.9269533}
   - {x: -2.9913702, y: -4.0179825}
+--- !u!70 &7285115795187179685
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849337849625292639}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 21.856127, y: 10.8}
+  m_Direction: 0

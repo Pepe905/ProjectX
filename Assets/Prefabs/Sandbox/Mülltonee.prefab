@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 3106266431723041909, guid: 9bd6aef6ddbfdae429e7211f8b67caa6,
         type: 3}
       propertyPath: m_Name
-      value: Square1
+      value: "M\xFClltonee"
       objectReference: {fileID: 0}
     - target: {fileID: 8796539296492682935, guid: 9bd6aef6ddbfdae429e7211f8b67caa6,
         type: 3}
@@ -88,5 +88,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9218329738887929602, guid: 9bd6aef6ddbfdae429e7211f8b67caa6,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a7bef3d8512562f4581b3d23a2efebee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bd6aef6ddbfdae429e7211f8b67caa6, type: 3}
