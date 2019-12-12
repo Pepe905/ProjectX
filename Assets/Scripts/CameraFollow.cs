@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject player;
+    public float CameraBorderX;
    
     void Start()
     {
@@ -15,6 +16,7 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y , transform.position.z);
+        if(player.transform.position.x > CameraBorderX)
+        transform.position = new Vector3(player.transform.position.x, transform.position.y , transform.position.z);
     }
 }
