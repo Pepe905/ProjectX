@@ -6,6 +6,9 @@ public class EnemyMovement : MonoBehaviour {
 
 	Animator enemyAC;
 
+	private SpriteRenderer enemy;
+	public bool flipSprite;
+
 	public float enemyAccel;
 	public float maxSpeed = 20f;
 
@@ -25,8 +28,23 @@ public class EnemyMovement : MonoBehaviour {
 		enemyTransform = GetComponent<Transform> ();
 		enemyRB = GetComponent<Rigidbody2D> ();
 		enemyAC = GetComponentInChildren<Animator> ();
+
+		enemy = GetComponentInChildren<SpriteRenderer>();
+		
 	}
-	
+	private void OnValidate()
+	{
+		enemy = GetComponentInChildren<SpriteRenderer>();
+		if (flipSprite)
+		{
+			enemy.flipX = true;
+		}
+		else
+		{
+			enemy.flipX = false;
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if (Time.time > nextFlipChance) {

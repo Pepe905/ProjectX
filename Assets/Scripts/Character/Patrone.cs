@@ -9,10 +9,11 @@ public class Patrone : MonoBehaviour
 
     public void OnTriggerEnter2D (Collider2D other)
     {
-        if (!other.CompareTag("Player"))
+        if (other.CompareTag("Enemy"))
         {
             other.SendMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
             Destroy(gameObject);
+
         }
     }
 

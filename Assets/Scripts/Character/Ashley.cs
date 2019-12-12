@@ -40,7 +40,7 @@ public class Ashley : MonoBehaviour
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
                                         //Ground
                                         if (!m_grounded && m_groundSensor.State())
