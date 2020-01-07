@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ParallaxLayer : MonoBehaviour
+public class ParallaxLayerScript : MonoBehaviour
 {
     [SerializeField]
     float multiplier = 0.0f;
