@@ -1,4 +1,4 @@
-﻿// FILENAME:Spawner.cs
+﻿// FILENAME:EnemySpawner.cs
 // PURPOSE:To allow spawning of different enemy types and different ways to spawn them.
 using UnityEngine;
 using System.Collections;
