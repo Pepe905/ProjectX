@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTestHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public Animator animator;
     public bool dead;
