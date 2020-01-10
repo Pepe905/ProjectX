@@ -7,6 +7,7 @@ TagManager:
   - New tag
   - Item
   - Enemy
+  - GM
   layers:
   - Default
   - TransparentFX
@@ -41,18 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundLayer
+    uniqueID: 2883743715
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 2883743715
-    locked: 0
-  - name: ForBackground
-    uniqueID: 588492105
-    locked: 0
-  - name: Character
-    uniqueID: 2745939889
-    locked: 0
-  - name: Forground
+  - name: ForegroundLayer
     uniqueID: 3383381287
     locked: 0
