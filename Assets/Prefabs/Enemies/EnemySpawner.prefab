@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8322977471538352827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.2, y: 0.72, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,7 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLevel: 0
-  EasyEnemy: {fileID: 0}
+  EasyEnemy: {fileID: 4965883652943443213, guid: 1a29975fceb9ef840b8bb70749c6fd23,
+    type: 3}
   MediumEnemy: {fileID: 0}
   HardEnemy: {fileID: 0}
   BossEnemy: {fileID: 0}
