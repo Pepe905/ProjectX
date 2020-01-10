@@ -118,7 +118,7 @@ public class Ashley : MonoBehaviour
                                         }
 
                                         //Run
-                                        else if (Mathf.Abs(inputX) > Mathf.Epsilon) ;
+                                        else if (Mathf.Abs(inputX) > Mathf.Epsilon);
                                         //    m_animator.SetInteger("AnimState", 2);
 
                                         
