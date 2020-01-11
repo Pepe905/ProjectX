@@ -48,7 +48,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipSprite: 0
-  enemyAccel: 15
-  maxSpeed: 20
+  enemyAccel: 2
+  maxSpeed: 10
   chargeTime: 0.25
 --- !u!1 &6917474544422569545
 GameObject:
@@ -107,10 +107,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8888690396946103170}
+  - component: {fileID: 5267995147070933381}
   - component: {fileID: 4352016079313718285}
   - component: {fileID: 2149891633952636809}
   - component: {fileID: 4447261983177625599}
-  - component: {fileID: 5267995147070933381}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -132,6 +132,21 @@ Transform:
   m_Father: {fileID: 7225900355127314827}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5267995147070933381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917474544422569545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fabe5b71e7d42f44a142421ea4ff491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  dead: 0
+  health: 1
 --- !u!212 &4352016079313718285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -195,8 +210,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19, y: 0.0075562}
-  m_Size: {x: 0.53, y: 1.55}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.31, y: 1.31}
   m_Direction: 0
 --- !u!95 &4447261983177625599
 Animator:
@@ -217,21 +232,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5267995147070933381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6917474544422569545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fabe5b71e7d42f44a142421ea4ff491, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  dead: 0
-  health: 3
 --- !u!1 &8769710922292332672
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: 0.01}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.66
 --- !u!114 &6276336208122024610
@@ -292,6 +292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca665ac55f8dfc147b8bf6a1daf109e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
   damageRate: 1
   pushBackForce: 15
