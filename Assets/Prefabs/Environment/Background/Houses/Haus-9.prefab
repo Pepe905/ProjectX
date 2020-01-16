@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8700092956428900282}
   - component: {fileID: 2136944598935217201}
+  - component: {fileID: 7865979234045686364}
   m_Layer: 0
   m_Name: Haus-9
   m_TagString: Untagged
@@ -81,3 +82,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &7865979234045686364
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4406918051487845348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.6831925, y: 11.110368}
+  - {x: 2.5848742, y: 11.179011}
