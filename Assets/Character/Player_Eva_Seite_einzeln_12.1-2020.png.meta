@@ -91,7 +91,7 @@ TextureImporter:
     - name: chest
       position: {x: 988.9447, y: 699.7319, z: 5}
       rotation: {x: 0, y: 0, z: 0.713623, w: 0.70053}
-      length: 231.59796
+      length: 231.59802
       parentId: -1
     - name: RL
       position: {x: -154.30559, y: 120.80074, z: 1}
@@ -104,7 +104,7 @@ TextureImporter:
       length: 213.56744
       parentId: 1
     - name: RF
-      position: {x: 213.56744, y: -0.000012514448, z: 1}
+      position: {x: 213.56743, y: -0.000010829398, z: 1}
       rotation: {x: 0, y: 0, z: -0.6533982, w: 0.75701445}
       length: 84.24794
       parentId: 2
@@ -115,32 +115,32 @@ TextureImporter:
       parentId: 0
     - name: LLD
       position: {x: 221.50256, y: 0.000036694422, z: 2}
-      rotation: {x: 0, y: 0, z: 0.0806278, w: 0.9967443}
+      rotation: {x: 0, y: 0, z: 0.08062798, w: 0.9967443}
       length: 230.22383
       parentId: 4
     - name: LF
-      position: {x: 230.22385, y: 0.0001179087, z: 2}
-      rotation: {x: 0, y: 0, z: -0.60648614, w: 0.79509413}
+      position: {x: 230.22386, y: 0.00015163099, z: 2}
+      rotation: {x: 0, y: 0, z: -0.6064863, w: 0.79509395}
       length: 68.50908
       parentId: 5
     - name: neck
-      position: {x: 231.598, y: -0.000007383994, z: 5}
-      rotation: {x: 0, y: 0, z: -0.009258019, w: 0.99995714}
+      position: {x: 231.59807, y: -0.0000085140955, z: 5}
+      rotation: {x: 0, y: 0, z: -0.009258019, w: 0.9999572}
       length: 30.016659
       parentId: 0
     - name: LA
       position: {x: -19.296751, y: -306.59964, z: 7}
-      rotation: {x: 0, y: -0, z: -0.9988369, w: 0.0482181}
-      length: 133.5519
+      rotation: {x: 0, y: -0, z: -0.9988369, w: 0.048217624}
+      length: 133.55185
       parentId: 7
     - name: LDA
-      position: {x: 133.55185, y: -0.000007314142, z: 7}
-      rotation: {x: 0, y: 0, z: -0.6052247, w: 0.79605466}
-      length: 119.45248
+      position: {x: 133.55182, y: 0.0001224319, z: 7}
+      rotation: {x: 0, y: 0, z: -0.60522443, w: 0.79605496}
+      length: 119.452484
       parentId: 8
     - name: LH
-      position: {x: 119.45251, y: 0.000026052861, z: 7}
-      rotation: {x: 0, y: 0, z: -0.13335463, w: 0.9910684}
+      position: {x: 119.452545, y: 0.00002925278, z: 7}
+      rotation: {x: 0, y: 0, z: -0.13335456, w: 0.9910684}
       length: 43.094967
       parentId: 9
     - name: RA
@@ -149,14 +149,14 @@ TextureImporter:
       length: 142.30115
       parentId: 7
     - name: LDA
-      position: {x: 142.30116, y: 0.000035213776, z: 2}
+      position: {x: 142.30116, y: 0.0000416511, z: 2}
       rotation: {x: 0, y: 0, z: -0.64984024, w: 0.76007086}
       length: 124.29987
       parentId: 11
     - name: Head
-      position: {x: -152.22758, y: 409.51428, z: 5}
-      rotation: {x: 0, y: 0, z: 0.06505924, w: 0.9978814}
-      length: 181.63792
+      position: {x: -152.22765, y: 403.0951, z: 5}
+      rotation: {x: 0, y: 0, z: 0.08244492, w: 0.9965956}
+      length: 182.58241
       parentId: 7
     - name: Bag
       position: {x: -443.819, y: 478.124, z: 6}
@@ -169,8 +169,8 @@ TextureImporter:
       length: 712.7163
       parentId: 12
     - name: LDA_18
-      position: {x: 124.29986, y: -0.000003869718, z: 2}
-      rotation: {x: 0, y: 0, z: -0.07451502, w: 0.99722}
+      position: {x: 124.29984, y: -0.0000017913335, z: 2}
+      rotation: {x: 0, y: 0, z: -0.07451506, w: 0.9972199}
       length: 38.838596
       parentId: 12
     spriteID: 5e97eb03825dee720800000000000000
