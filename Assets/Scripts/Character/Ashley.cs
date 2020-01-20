@@ -11,7 +11,7 @@ public class Ashley : MonoBehaviour
                 [SerializeField] float m_jumpForce = 2.0f;
                 [SerializeField] float Ammospeed = 500;
 
-                private Animator m_animator;
+                public Animator m_animator;
                 private Rigidbody2D m_body2d;
                 private Ashley_Sensor m_groundSensor;
                 private bool m_grounded = false;
@@ -68,7 +68,7 @@ public class Ashley : MonoBehaviour
 
                                         //Airspeed
 
-                                        //m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
+                                        // m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
 
 
 
@@ -110,7 +110,7 @@ public class Ashley : MonoBehaviour
                                         else if (Input.GetKeyDown("space") && m_grounded)
                                         {
 
-                                            m_animator.SetTrigger("Jump");
+                                            m_animator.SetTrigger("isjumping");
                                             m_grounded = false;
                                             m_animator.SetBool("Grounded", m_grounded);
                                             m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
@@ -119,7 +119,7 @@ public class Ashley : MonoBehaviour
 
                                         //Run
                                         else if (Mathf.Abs(inputX) > Mathf.Epsilon);
-                                        //    m_animator.SetInteger("AnimState", 2);
+                                        m_animator.SetFloat("Speed", inputX);
 
                                         
                                         
