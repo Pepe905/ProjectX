@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Options.unity
     guid: c43173bec09a0964a8b36f2ad142a970
   - enabled: 1
-    path: Assets/Scenes/StiLab.unity
+    path: Assets/Scenes/archiv/StiLab.unity
     guid: 7c79cb102804ec5449eeb90d285ea573
   m_configObjects: {}
