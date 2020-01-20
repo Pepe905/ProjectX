@@ -95,17 +95,17 @@ TextureImporter:
       parentId: 22
     - name: thigh_R
       position: {x: -154.30559, y: 120.80074, z: 1}
-      rotation: {x: 0, y: -0, z: 0.99901944, w: 0.044273518}
-      length: 245.02281
+      rotation: {x: 0, y: -0, z: 0.99901944, w: 0.044273995}
+      length: 245.0228
       parentId: 0
     - name: shin_R
-      position: {x: 245.02281, y: -0.00019592217, z: 1}
-      rotation: {x: 0, y: 0, z: 0.090234816, w: 0.99592054}
-      length: 162.43242
+      position: {x: 245.02278, y: 0.00005702381, z: 1}
+      rotation: {x: 0, y: 0, z: 0.090235315, w: 0.9959205}
+      length: 162.43239
       parentId: 1
-    - name: food_r
-      position: {x: 51.13495, y: -0.00021713304, z: 1}
-      rotation: {x: 0, y: 0, z: -0.6533975, w: 0.757015}
+    - name: foot_R
+      position: {x: 51.13495, y: -0.00024573394, z: 1}
+      rotation: {x: 0, y: 0, z: -0.65339756, w: 0.757015}
       length: 84.24794
       parentId: 17
     - name: tigh_L
@@ -118,9 +118,9 @@ TextureImporter:
       rotation: {x: 0, y: 0, z: 0.08062853, w: 0.9967442}
       length: 186.64487
       parentId: 4
-    - name: food_L
+    - name: foot_L
       position: {x: 43.578968, y: 0.00015770081, z: 2}
-      rotation: {x: 0, y: 0, z: -0.6064876, w: 0.79509294}
+      rotation: {x: 0, y: 0, z: -0.60648763, w: 0.795093}
       length: 68.50908
       parentId: 18
     - name: neck
@@ -140,7 +140,7 @@ TextureImporter:
       parentId: 8
     - name: hand_L
       position: {x: 119.45234, y: 0.00003284561, z: 8}
-      rotation: {x: 0, y: 0, z: -0.1333548, w: 0.99106836}
+      rotation: {x: 0, y: 0, z: -0.13335484, w: 0.9910684}
       length: 43.094967
       parentId: 9
     - name: arm_R
@@ -170,12 +170,12 @@ TextureImporter:
       parentId: 10
     - name: hand_R
       position: {x: 124.30052, y: 0.000018470164, z: -1}
-      rotation: {x: 0, y: 0, z: -0.07451535, w: 0.99721986}
+      rotation: {x: 0, y: 0, z: -0.07451543, w: 0.99721986}
       length: 38.838596
       parentId: 12
     - name: ancle_R
-      position: {x: 162.4324, y: 0.000041629162, z: 1}
-      rotation: {x: 0, y: 0, z: 0.000000018923915, w: 1}
+      position: {x: 162.43239, y: 0.000020599953, z: 1}
+      rotation: {x: 0, y: 0, z: -0.0000000033367016, w: 1}
       length: 51.13495
       parentId: 2
     - name: ancle_L
@@ -185,17 +185,17 @@ TextureImporter:
       parentId: 5
     - name: hair_01
       position: {x: 39.95142, y: -54.070053, z: 6}
-      rotation: {x: 0, y: -0, z: -0.99186677, w: 0.12728113}
-      length: 106.01188
+      rotation: {x: 0, y: -0, z: -0.9918667, w: 0.12728113}
+      length: 106.011894
       parentId: 13
     - name: hair_02
-      position: {x: 106.011894, y: 0.0000034408786, z: 6}
+      position: {x: 106.01193, y: 0.000009258998, z: 6}
       rotation: {x: 0, y: 0, z: -0.06519538, w: 0.99787253}
-      length: 87.22455
+      length: 87.22457
       parentId: 19
     - name: hair_03
-      position: {x: 87.22455, y: -0.000011470993, z: 6}
-      rotation: {x: 0, y: 0, z: -0.09908776, w: 0.99507874}
+      position: {x: 87.22454, y: 0.000006860202, z: 6}
+      rotation: {x: 0, y: 0, z: -0.09908777, w: 0.9950787}
       length: 289.35925
       parentId: 20
     - name: root
