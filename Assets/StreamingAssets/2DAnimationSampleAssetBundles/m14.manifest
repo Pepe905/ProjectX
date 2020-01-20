@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 266382637
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e34b6e4ac2cf07915013886c88d1e503
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb3f6df5cbc4a2990c44c2787bc9553a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Character/Animations/weapons/Weapon Animation 5 14_11_2019.png
+- Assets/Character/Animations/weapons/Weapon Animation 4 14_11_2019.png
+- Assets/Character/Animations/weapons/Weapon Animation 1 14_11_2019.png
+- Assets/Character/Animations/weapons/Weapon Animation 2 14_11_2019.png
+- Assets/Character/Animations/weapons/Weapon Animation 3 14_11_2019.png
+- Assets/Character/Animations/weapons/Weapon Animation 6 14_11_2019.png
+Dependencies: []
