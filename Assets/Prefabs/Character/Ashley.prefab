@@ -169,8 +169,8 @@ GameObject:
   - component: {fileID: 1143161741759580704}
   - component: {fileID: 7964902484810322297}
   - component: {fileID: 4007232460608408841}
-  - component: {fileID: 5373910309440630803}
   - component: {fileID: 8230665280802109184}
+  - component: {fileID: 7183399815377407042}
   m_Layer: 0
   m_Name: Ashley
   m_TagString: Player
@@ -360,7 +360,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Solvers: []
   m_Weight: 1
---- !u!114 &5373910309440630803
+--- !u!114 &8230665280802109184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143161741759580705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb6404781555c04b94d057ffb3676d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7183399815377407042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -391,22 +403,15 @@ MonoBehaviour:
   - {fileID: 2178544587156351474}
   - {fileID: 4143032918870896371}
   - {fileID: 2232357324956807986}
+  - {fileID: 2867033225262201116}
+  - {fileID: 2438161808871838507}
+  - {fileID: 274227371922239551}
+  - {fileID: 274227371922239551}
+  - {fileID: 274227371922239551}
   m_Bounds:
-    m_Center: {x: -0.09951168, y: 0.39923036, z: 0}
-    m_Extent: {x: 1.2459798, y: 0.95961344, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_UseBatching: 1
---- !u!114 &8230665280802109184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143161741759580705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb6404781555c04b94d057ffb3676d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1143161742102854824
 GameObject:
   m_ObjectHideFlags: 0
