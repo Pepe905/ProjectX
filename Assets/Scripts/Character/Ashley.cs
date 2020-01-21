@@ -20,6 +20,12 @@ public class Ashley : MonoBehaviour
                 public GameObject AmmoPrefab;
                 public Transform spawnPoint;
                 public bool lookingleft = true;
+                public int MaxAmmo = 15;
+                private int currentAmmo;
+                public float reloadTime = 1f;
+                private bool isReloading = false;
+                public float fireRate = 15f;
+                private float nextTimeToFire = 0f;
                 
 
                 
@@ -36,9 +42,16 @@ public class Ashley : MonoBehaviour
                m_body2d = GetComponent<Rigidbody2D>();
                m_groundSensor = transform.Find("Ashley_GroundSensor").GetComponent<Ashley_Sensor>();
                characterSprite = GetComponent<SpriteRenderer>();
+               currentAmmo = MaxAmmo;
+
     }
 
+    void OnEnable()
+    {
+        isReloading = false;
 
+
+    }
     // Update is called once per frame
     void Update()
     {
@@ -82,17 +95,47 @@ public class Ashley : MonoBehaviour
                                             myScale.x *= -1;
                                             transform.localScale = myScale;
                                         }
+                                        
+                                        //reload
+
+                                          
+        
+                                        IEnumerator reload()
+                                        {
+                                        isReloading = true;
+                                        Debug.Log("Reloading");
+                                        yield return new WaitForSeconds(reloadTime);
+                                        currentAmmo = MaxAmmo;
+                                        isReloading = false;
+
+                                        }
 
                                         
+        
+                                        if (currentAmmo <= 0)
+                                        {
+                                           StartCoroutine(reload());
+                                           return;
+                                        }
+
+                                         if  (isReloading)
+                                                return;
 
                                         //Gunfire
 
-                                        if (Input.GetButtonDown("Fire1") && !isAttacking)
-                                        isAttacking = true;
+                                        if
+            
+                                        (Input.GetButtonDown("Fire1") && !isAttacking && Time.time >= nextTimeToFire)
+                                        {  
+                                                    currentAmmo--;
+                                                    isAttacking = true;
+                                                    nextTimeToFire = Time.time + 1f / fireRate;
+                                        }
 
                                         if (isAttacking)
-                                        {
-                                            m_animator.SetTrigger("Attack");
+                                        {   
+                                            
+                                            // m_animator.SetTrigger("Attack");
                                             GameObject Ammo = (GameObject)Instantiate(AmmoPrefab, spawnPoint.position, Quaternion.identity);
 
                                             if (lookingleft)
@@ -103,6 +146,14 @@ public class Ashley : MonoBehaviour
 
                                             isAttacking = false;
                                         }
+                                         
+                                       
+            
+            
+            
+            
+                                        
+                                      
 
 
                                         //Jump
