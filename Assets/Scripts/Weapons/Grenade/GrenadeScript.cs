@@ -12,8 +12,9 @@ public class GrenadeScript : MonoBehaviour
     public float explosiveRadius = 15f;
 
 
-    [SerializeField] GameObject exploParticle;
+    [SerializeField] private GameObject exploParticle;
 
+    public GameObject ExploParticle { get => exploParticle; set => exploParticle = value; }
 
     void Update() {
         startTimer += Time.deltaTime;
@@ -34,7 +35,7 @@ public class GrenadeScript : MonoBehaviour
         }
 
         
-        GameObject spawnedParticle = Instantiate(exploParticle, transform.position, transform.rotation);
+        GameObject spawnedParticle = Instantiate(ExploParticle, transform.position, transform.rotation);
         Destroy(spawnedParticle, 5);
         /*
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
