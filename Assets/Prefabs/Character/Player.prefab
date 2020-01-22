@@ -260,7 +260,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e88ee44b4cd0f254da7598a851321e5f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -302,6 +302,10 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 1143161741585949148}
   lookingleft: 1
+  MaxAmmo: 15
+  currentAmmo: 0
+  reloadTime: 1
+  fireRate: 15
 --- !u!212 &7964902484810322297
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -410,7 +414,6 @@ MonoBehaviour:
   - {fileID: 7932431603973277769}
   - {fileID: 82922614982337273}
   - {fileID: 1078134782566402094}
-  - {fileID: 0}
   m_Weight: 1
 --- !u!1 &1143161742102854824
 GameObject:
@@ -457,7 +460,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10679369, y: -0.42911297}
+  m_Offset: {x: 0.10679369, y: -0.48}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
