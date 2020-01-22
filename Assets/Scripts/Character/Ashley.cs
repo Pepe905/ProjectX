@@ -21,11 +21,12 @@ public class Ashley : MonoBehaviour
                 public Transform spawnPoint;
                 public bool lookingleft = true;
                 public int MaxAmmo = 15;
-                private int currentAmmo;
+                public int currentAmmo;
                 public float reloadTime = 1f;
                 private bool isReloading = false;
                 public float fireRate = 15f;
                 private float nextTimeToFire = 0f;
+                
                 
 
                 
@@ -110,24 +111,24 @@ public class Ashley : MonoBehaviour
 
                                         }
 
-                                        
+                                        if  (isReloading)
+                                                return;
         
-                                        if (currentAmmo <= 0)
+                                        if (Input.GetKeyDown(KeyCode.R))
                                         {
                                            StartCoroutine(reload());
                                            return;
                                         }
 
-                                         if  (isReloading)
-                                                return;
+                                         
 
                                         //Gunfire
 
                                         if
             
-                                        (Input.GetButtonDown("Fire1") && !isAttacking && Time.time >= nextTimeToFire)
+                                        (Input.GetButton("Fire1") && !isAttacking && Time.time >= nextTimeToFire && currentAmmo >0 )
                                         {  
-                                                    currentAmmo--;
+                                                    currentAmmo--;       
                                                     isAttacking = true;
                                                     nextTimeToFire = Time.time + 1f / fireRate;
                                         }
@@ -135,7 +136,7 @@ public class Ashley : MonoBehaviour
                                         if (isAttacking)
                                         {   
                                             
-                                            // m_animator.SetTrigger("Attack");
+                                            
                                             GameObject Ammo = (GameObject)Instantiate(AmmoPrefab, spawnPoint.position, Quaternion.identity);
 
                                             if (lookingleft)
