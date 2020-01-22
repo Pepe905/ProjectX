@@ -169,9 +169,12 @@ public class Ashley : MonoBehaviour
                                             m_groundSensor.Disable(0.1f);
                                         }
 
-                                        //Run
-                                        else if (Mathf.Abs(inputX) > Mathf.Epsilon);
-                                        m_animator.SetFloat("Speed", inputX);
+        //Run
+                                        else if (Mathf.Abs(inputX) > Mathf.Epsilon)
+                                        {
+                                            m_animator.SetFloat("Speed", inputX);
+                                        }
+                                            
 
                                         
                                         
