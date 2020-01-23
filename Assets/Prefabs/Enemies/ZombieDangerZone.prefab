@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4965883652943443213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2666, y: 1.2666, z: 1.2666}
+  m_LocalScale: {x: 1.6085014, y: 1.6085014, z: 1.6085014}
   m_Children:
   - {fileID: 8127128356440732073}
   - {fileID: 8888690396946103170}
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipSprite: 0
-  enemyAccel: 2
+  enemyAccel: 10
   maxSpeed: 10
   chargeTime: 0.25
 --- !u!1 &6917474544422569545
