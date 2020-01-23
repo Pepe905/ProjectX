@@ -80,11 +80,6 @@ public class Ashley : MonoBehaviour
                                         // Move
                                         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 
-                                        //Airspeed
-
-                                        // m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
-
-
 
                                         //Direction
                                         void Flip()
@@ -103,6 +98,7 @@ public class Ashley : MonoBehaviour
         
                                         IEnumerator reload()
                                         {
+                                        m_animator.SetTrigger("isReloading");
                                         isReloading = true;
                                         Debug.Log("Reloading");
                                         yield return new WaitForSeconds(reloadTime);
@@ -126,8 +122,9 @@ public class Ashley : MonoBehaviour
 
                                         if
             
-                                        (Input.GetButton("Fire1") && !isAttacking && Time.time >= nextTimeToFire && currentAmmo >0 )
+                                        (Input.GetButtonDown("Fire1") && !isAttacking && Time.time >= nextTimeToFire && currentAmmo >0 )
                                         {  
+                                                    m_animator.SetTrigger("isAttacking");
                                                     currentAmmo--;       
                                                     isAttacking = true;
                                                     nextTimeToFire = Time.time + 1f / fireRate;
@@ -137,6 +134,7 @@ public class Ashley : MonoBehaviour
                                         {   
                                             
                                             
+
                                             GameObject Ammo = (GameObject)Instantiate(AmmoPrefab, spawnPoint.position, Quaternion.identity);
 
                                             if (lookingleft)
