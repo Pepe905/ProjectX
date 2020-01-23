@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipSprite: 0
-  enemyAccel: 10
-  maxSpeed: 10
+  enemyAccel: 2
+  maxSpeed: 3
   chargeTime: 0.25
 --- !u!1 &6917474544422569545
 GameObject:
