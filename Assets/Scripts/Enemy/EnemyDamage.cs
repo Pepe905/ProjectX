@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour {
 
+	[SerializeField] EnemyHealth enemyHealth;
+
 	public float damage;
 	public float damageRate;
 	public float pushBackForce;
@@ -16,6 +18,9 @@ public class EnemyDamage : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other){
+		if (enemyHealth.hasDied)
+			return;
+
 		if (other.tag == "Player" && nextDamage < Time.time) {
 			playerHealth thePlayerHealth = other.gameObject.GetComponent<playerHealth> ();
 			thePlayerHealth.addDamage (damage);
