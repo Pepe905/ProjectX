@@ -71,6 +71,7 @@ public class playerHealth : MonoBehaviour {
 		Destroy (gameObject);
 	}
 
+
 	public void addRuby(){
 		collectedRubies +=1;
 		rubyCount.text = collectedRubies.ToString();
