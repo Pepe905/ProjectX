@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9082741706418145906}
   - component: {fileID: 4354842701920120540}
   - component: {fileID: 1157772852140672826}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ZombieDangerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,10 +94,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344cbeb797b034d4782c77d1109ba6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 5267995147070933381}
   flipSprite: 0
-  enemyAccel: 2
-  maxSpeed: 3
+  enemyAccel: 5
+  maxSpeed: 5
   chargeTime: 0.25
+  charging: 0
 --- !u!1 &6917474544422569545
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,7 +113,7 @@ GameObject:
   - component: {fileID: 4352016079313718285}
   - component: {fileID: 2149891633952636809}
   - component: {fileID: 4447261983177625599}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -147,6 +149,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   dead: 0
   health: 1
+  disappearParticle: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  disappearParticle2: {fileID: 0}
 --- !u!212 &4352016079313718285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -185,7 +189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 93f8c1cb245b4244bba2ebedcf9808e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -243,7 +247,7 @@ GameObject:
   - component: {fileID: 8127128356440732073}
   - component: {fileID: 6037356795543241379}
   - component: {fileID: 6276336208122024610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dangerzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca665ac55f8dfc147b8bf6a1daf109e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 5267995147070933381}
   damage: 1
   damageRate: 1
   pushBackForce: 15
