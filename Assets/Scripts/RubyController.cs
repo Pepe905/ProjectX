@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RubyController : MonoBehaviour {
-
+	/*Currently not needed anymore
 	public GameObject rewardObject;
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -13,4 +13,5 @@ public class RubyController : MonoBehaviour {
 			Destroy(transform.root.gameObject);
 		}
 	}
+	*/
 }
