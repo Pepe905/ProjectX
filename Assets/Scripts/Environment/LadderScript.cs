@@ -24,7 +24,14 @@ public class LadderScript : MonoBehaviour
         if(onLadder)
         {
             climbVelocity = climbspeed * Input.GetAxisRaw("Vertical");
-            playerRB.velocity = new Vector2(0, climbVelocity);
+            if(!playerRB)
+                playerRB = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+
+            Debug.Log(playerRB);
+            Debug.Log(GameObject.FindGameObjectWithTag("Player"));
+            Debug.Log(GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>());
+
+            playerRB.velocity = new Vector2(playerRB.velocity.x, climbVelocity);
         }
 
     }
@@ -34,6 +41,8 @@ public class LadderScript : MonoBehaviour
         // Player
         if (other.gameObject.tag == "Player")
         {
+            if (!playerRB)
+                playerRB = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
             onLadder = true;
             Debug.Log("Ashley erreicht Leiter im Haus");
          //Gravitation
@@ -47,6 +56,9 @@ public class LadderScript : MonoBehaviour
         // Player
         if (other.gameObject.tag == "Player")
         {
+            if (!playerRB)
+                playerRB = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+
             onLadder = false;
             Debug.Log("Ashley verlässt Leiter im Haus");
             //Gravitation
