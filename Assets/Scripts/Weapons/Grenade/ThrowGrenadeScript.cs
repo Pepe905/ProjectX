@@ -10,13 +10,16 @@ public class ThrowGrenadeScript : MonoBehaviour
     public Transform hand;
     public float throwForce = 10f;
 
+    [SerializeField] Vector2 grenadeStartVelocity;
+
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            GameObject gren = Instantiate(grenadePrefab, hand.position, hand.rotation) as GameObject;
-            gren.GetComponent<Rigidbody>().AddForce(hand.forward * throwForce, ForceMode.Impulse);
+            GameObject gren = Instantiate(grenadePrefab, hand.position, hand.rotation);
+            gren.GetComponent<Rigidbody2D>().velocity = grenadeStartVelocity;
+            //gren.GetComponent<Rigidbody>().AddForce(hand.forward * throwForce, ForceMode.Impulse);
         }
     }
 }

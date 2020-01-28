@@ -50,7 +50,7 @@ MonoBehaviour:
   damage: 10
   explosiveForce: 20
   explosiveRadius: 15
-  exploParticle: {fileID: 0}
+  exploParticle: {fileID: 100002, guid: 6ecf76dc4f268d340b2666896a954bcc, type: 3}
 --- !u!212 &615462188330649372
 SpriteRenderer:
   m_ObjectHideFlags: 0

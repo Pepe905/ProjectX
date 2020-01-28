@@ -16,40 +16,74 @@ public class GrenadeScript : MonoBehaviour
 
     public GameObject ExploParticle { get => exploParticle; set => exploParticle = value; }
 
-    void Update() {
+    void Update()
+    {
+
         startTimer += Time.deltaTime;
-        if (startTimer >= timeDelay) { 
-            Explode(); //Function explode get called
+        if (startTimer >= timeDelay)
+        {
+            Explode(); //Function explode gets called
         }
     }
 
+    bool h_hasExploded = false; //h_ = helper Variable
     void Explode() // Function that gets called
     {
-        Collider[] coll = Physics.OverlapSphere(transform.position, explosiveRadius);
+        if (h_hasExploded)
+            return;
+        h_hasExploded = true;
 
-        for (int i = 0; i < coll.Length; i++) {
-            if (coll [i].gameObject.GetComponent <TestDummy> ()) {
-                coll[i].gameObject.GetComponent<TestDummy>().TakeDamage(damage);
-                coll[i].gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosiveForce, transform.position, explosiveRadius);
+        Collider2D[] coll = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), explosiveRadius);
+
+        Debug.LogWarning(coll.Length);
+
+        for (int i = 0; i < coll.Length; i++)
+        {
+            EnemyHealth eh = coll[i].gameObject.GetComponent<EnemyHealth>();
+            if (eh)
+            {
+                eh.ApplyDamage(damage);
+                //coll[i].gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosiveForce, transform.position, explosiveRadius);
             }
+            /*
+            playerHealth ph = coll[i].gameObject.GetComponent<playerHealth>();
+            if (ph)
+            {
+                ph.addDamage(damage);
+            }
+            */
         }
 
-        
+
         GameObject spawnedParticle = Instantiate(ExploParticle, transform.position, transform.rotation);
+        //spawnedParticle.transform.parent = transform.root;
         Destroy(spawnedParticle, 5);
-        /*
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
-        foreach (Collider nearbyObject in colliders)
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosiveRadius);
+        foreach (var nearbyObject in colliders)
         {
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.AddExplosionForce(force, transform.position, radius);
+                rb.AddExplosionForce(explosiveForce, transform.position, explosiveRadius);
             }
         }
-        
-            hasExploded = true;
-            */
+
+        /* Script part from bullet could ba an alternative solution
+            public void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            other.SendMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
+            Destroy(gameObject);
+
+        }
+    }
+        */
+
+
+        //hasExploded = true;
+
         Destroy(gameObject);
     }
 }
