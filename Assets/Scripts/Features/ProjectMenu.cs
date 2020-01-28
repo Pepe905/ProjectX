@@ -14,4 +14,11 @@ public class ProjectMenu : MonoBehaviour
         SceneManager.LoadScene(Scene);
     }
 
+    public void Exit()
+    {
+#if UNITY_EDITOR
+        Debug.Break();
+#endif
+        Application.Quit();
+    }
 }   
