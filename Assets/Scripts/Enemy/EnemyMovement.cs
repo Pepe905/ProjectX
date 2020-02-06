@@ -2,102 +2,145 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour {
+public class EnemyMovement : MonoBehaviour
+{
 
-	Animator enemyAC;
+    [SerializeField] EnemyHealth enemyHealth;
 
-	private SpriteRenderer enemy;
-	public bool flipSprite;
+    Animator enemyAC;
 
-	public float enemyAccel;
-	public float maxSpeed = 20f;
+    private SpriteRenderer enemy;
+    public bool flipSprite;
 
-	public float chargeTime;
-	float startChargeTime;
-	bool charging = false;
-	Rigidbody2D enemyRB;
+    public float enemyAccel;
+    public float maxSpeed = 20f;
 
-	bool canFlip = true;
-	bool facingRight = false;
-	float flipTime = 5f;
-	float nextFlipChance = 0f;
-	Transform enemyTransform;
+    public float chargeTime;
+    float startChargeTime;
+    public bool charging = false;
+    Rigidbody2D enemyRB;
 
-	// Use this for initialization
-	void Start () {
-		enemyTransform = GetComponent<Transform> ();
-		enemyRB = GetComponent<Rigidbody2D> ();
-		enemyAC = GetComponentInChildren<Animator> ();
+    bool canFlip = true;
+    bool facingRight = false;
+    float flipTime = 5f;
+    float nextFlipChance = 0f;
+    Transform enemyTransform;
 
-		enemy = GetComponentInChildren<SpriteRenderer>();
-		
-	}
-	private void OnValidate()
-	{
-		enemy = GetComponentInChildren<SpriteRenderer>();
-		if (flipSprite)
-		{
-			enemy.flipX = true;
-		}
-		else
-		{
-			enemy.flipX = false;
-		}
-	}
+    // Use this for initialization
 
-	// Update is called once per frame
-	void Update () {
-		if (Time.time > nextFlipChance) {
-			if (Random.Range (0, 10) >= 5)
-				flipFacing ();
-			nextFlipChance = Time.time + flipTime;
-		}
+    private void Awake()
+    {
+        if (!enemyHealth)
+        {
+            Debug.LogError("enemyHealth reference not set");
+            Destroy(this);
+            return;
+        }
+    }
 
-		if (charging && Time.time > startChargeTime && enemyRB.velocity.x < maxSpeed) {
-			if (!facingRight)
-				enemyRB.AddForce (new Vector2 (-1f, 0f) * enemyAccel);
-			else
-				enemyRB.AddForce (new Vector2 (1f, 0f) * enemyAccel);
-			enemyAC.SetBool ("isCharging", charging);
-		}
-	}
+    void Start()
+    {
+        enemyTransform = GetComponent<Transform>();
+        enemyRB = GetComponent<Rigidbody2D>();
+        enemyAC = GetComponentInChildren<Animator>();
 
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Player") {
-			if (facingRight && other.transform.position.x < transform.position.x) {
-				flipFacing ();
-			} else if (!facingRight && other.transform.position.x > transform.position.x) {
-				flipFacing ();
-			}
-			canFlip = false;
-			charging = true;
-			startChargeTime = Time.time + chargeTime;
-		}
-	}
+        enemy = GetComponentInChildren<SpriteRenderer>();
 
-	void OnTriggerStay2D(Collider2D other){
-		if (other.tag == "Player") {
-			charging = true;
-		}
-	}
+    }
+    private void OnValidate()
+    {
+        enemy = GetComponentInChildren<SpriteRenderer>();
+        if (flipSprite)
+        {
+            enemy.flipX = true;
+        }
+        else
+        {
+            enemy.flipX = false;
+        }
+    }
 
-	void OnTriggerExit2D(Collider2D other){
-		if (other.tag == "Player") {
-			canFlip = true;
-			charging = false;
-			enemyRB.velocity = new Vector2 (0f, 0f);
-			enemyAC.SetBool ("isCharging", charging);
-		}
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        if (enemyHealth.hasDied)
+            return;
 
-	void flipFacing(){
-		if (!canFlip)
-			return;
-		float facingX = enemyTransform.localScale.x;
-		facingX *= -1;
-		enemyTransform.localScale = new Vector3 (facingX, enemyTransform.localScale.y, enemyTransform.localScale.z);
-		facingRight = !facingRight;
+        //Debug.LogWarning("A");
 
-	}
-		
+        if (Time.time > nextFlipChance)
+        {
+            if (Random.Range(0, 10) >= 5)
+                flipFacing();
+            nextFlipChance = Time.time + flipTime;
+        }
+
+        if (charging && Time.time > startChargeTime && enemyRB.velocity.x < maxSpeed)
+        {
+#if OBSOLETE
+            if (!facingRight)
+                enemyRB.velocity += new Vector2(-1f, 0f) * enemyAccel * Time.deltaTime;
+            //enemyRB.AddForce(new Vector2(-1f, 0f) * enemyAccel * Time.deltaTime);
+            else
+                enemyRB.velocity += new Vector2(1f, 0f) * enemyAccel * Time.deltaTime;
+            //enemyRB.AddForce(new Vector2(1f, 0f) * enemyAccel * Time.deltaTime);
+#endif
+            //Schönerer und besser maintainbare Variante: 
+            enemyRB.velocity += new Vector2(facingRight ? 1f : -1f, 0f) * enemyAccel * Time.deltaTime;
+
+            enemyAC.SetBool("isCharging", charging);
+        }
+
+        //Debug.LogWarning("C");
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            if (facingRight && other.transform.position.x < transform.position.x)
+            {
+                flipFacing();
+            }
+            else if (!facingRight && other.transform.position.x > transform.position.x)
+            {
+                flipFacing();
+            }
+            /*asdfhasölfasf*/
+            canFlip = false;
+            charging = true;
+            startChargeTime = Time.time + chargeTime;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            charging = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            canFlip = true;
+            charging = false;
+            enemyRB.velocity = new Vector2(0f, 0f);
+            enemyAC.SetBool("isCharging", charging);
+        }
+    }
+
+    void flipFacing()
+    {
+        if (!canFlip)
+            return;
+        float facingX = enemyTransform.localScale.x;
+        facingX *= -1;
+        enemyTransform.localScale = new Vector3(facingX, enemyTransform.localScale.y, enemyTransform.localScale.z);
+        facingRight = !facingRight;
+
+    }
+
 }
