@@ -7410,8 +7410,8 @@ MonoBehaviour:
   YMinValue: -2.58
   XMaxEnabled: 0
   XMaxValue: 0
-  XMinEnabled: 0
-  XMinValue: 0
+  XMinEnabled: 1
+  XMinValue: -20
 --- !u!1001 &392930791
 PrefabInstance:
   m_ObjectHideFlags: 0
