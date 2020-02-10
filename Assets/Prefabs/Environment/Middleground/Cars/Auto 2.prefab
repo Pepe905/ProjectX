@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6773840067453251677}
   - component: {fileID: 7303356468868018229}
   m_Layer: 0
-  m_Name: Auto-2_asset
-  m_TagString: Untagged
+  m_Name: Auto 2
+  m_TagString: JumpCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 17.92, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!68 &7303356468868018229

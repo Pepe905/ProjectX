@@ -19,7 +19,7 @@ public class Ashley_Sensor : MonoBehaviour
 
     public bool State()
     {
-        if (m_DisableTimer > 0)
+        if (m_DisableTimer > 1)
             return false;
         return m_ColCount > 0;
     }

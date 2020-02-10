@@ -28,6 +28,11 @@ public class Ashley : MonoBehaviour
     private float nextTimeToFire = 0f;
 
 
+    [SerializeField] private float jumpCooldown = 1f;
+    private bool canJump = true;
+    private float timeSinceJump = 0;
+
+
 
 
 
@@ -56,17 +61,25 @@ public class Ashley : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Ground
-        if (!m_grounded && m_groundSensor.State())
+        if (!canJump)
         {
-            m_grounded = true;
+            timeSinceJump += jumpCooldown * Time.deltaTime;
+            if (timeSinceJump >= 1)
+            { 
+                timeSinceJump = 0;
+                canJump = true;
+            }
+        }
+    
+        //Ground
+        if (m_grounded && canJump)
+        {
             m_animator.SetBool("Grounded", m_grounded);
         }
 
         //Falling
-        if (m_grounded && !m_groundSensor.State())
+        if (!m_grounded && !canJump)
         {
-            m_grounded = false;
             m_animator.SetBool("Grounded", m_grounded);
         }
 
@@ -172,21 +185,16 @@ public class Ashley : MonoBehaviour
         {
             m_animator.SetFloat("Speed", inputX);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "JumpCollider")
+        {
+            m_grounded = true;
+        }
+    }
 }
 
 

@@ -23422,7 +23422,7 @@ GameObject:
   - component: {fileID: 983004505}
   m_Layer: 0
   m_Name: GroundCollidor
-  m_TagString: Untagged
+  m_TagString: JumpCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34721,6 +34721,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Haus-9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406918051487845348, guid: 91766c8e582bd5c42ad3fdaab4f1973f,
+        type: 3}
+      propertyPath: m_TagString
+      value: JumpCollider
       objectReference: {fileID: 0}
     - target: {fileID: 8700092956428900282, guid: 91766c8e582bd5c42ad3fdaab4f1973f,
         type: 3}

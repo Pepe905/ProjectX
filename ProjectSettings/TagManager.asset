@@ -8,6 +8,7 @@ TagManager:
   - Item
   - Enemy
   - GM
+  - JumpCollider
   layers:
   - Default
   - TransparentFX

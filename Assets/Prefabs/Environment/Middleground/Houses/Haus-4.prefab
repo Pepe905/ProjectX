@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 603475672987039055}
   m_Layer: 0
   m_Name: Haus-4
-  m_TagString: Untagged
+  m_TagString: JumpCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

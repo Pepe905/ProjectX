@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2457499083390885234}
   m_Layer: 0
   m_Name: Dach-1
-  m_TagString: Untagged
+  m_TagString: JumpCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

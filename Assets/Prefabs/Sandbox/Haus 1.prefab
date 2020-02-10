@@ -82,6 +82,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Haus 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8360136367702765728, guid: c4affaec40ca39a4bb70846a84108fa4,
+        type: 3}
+      propertyPath: m_TagString
+      value: JumpCollider
+      objectReference: {fileID: 0}
     - target: {fileID: 9016279873091086490, guid: c4affaec40ca39a4bb70846a84108fa4,
         type: 3}
       propertyPath: m_Color.r
@@ -105,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 9016279873091086490, guid: c4affaec40ca39a4bb70846a84108fa4,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4affaec40ca39a4bb70846a84108fa4, type: 3}
