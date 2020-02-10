@@ -68,10 +68,15 @@ public class EnemySpawner : MonoBehaviour
     //Wave controls
     public int totalWaves = 5;
     private int numWaves = 0;
+
+    [SerializeField] private bool attached = false;
+    [SerializeField] private float offsetX = -10f;
+    [SerializeField] private float offsetY = 10f;
+    [SerializeField] private GameObject player;
     //----------------------------------
     // End of Different Spawn states and ways of doing them
     //----------------------------------
-   
+
     void Start()
     {
         // sets a random number for the id of the spawner
@@ -89,6 +94,10 @@ public class EnemySpawner : MonoBehaviour
    
     void Update ()
     {
+        if (attached)
+        {
+            transform.position = player.transform.position + new Vector3(offsetX, offsetY, 0);
+        }
         if(Spawn)
         {
             // Spawns enemies everytime one dies
