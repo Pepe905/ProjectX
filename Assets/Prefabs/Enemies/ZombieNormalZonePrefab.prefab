@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4354842701920120540}
   - component: {fileID: 1157772852140672826}
   m_Layer: 10
-  m_Name: ZombieDangerZone
+  m_Name: ZombieNormalZonePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,11 +146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fabe5b71e7d42f44a142421ea4ff491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  deathAnimation: {fileID: 8049888250384803735, guid: 6381579f4b32af842bbca21d005bcc8d,
+    type: 3}
   dead: 0
   health: 1
   disappearParticle: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
-  disappearParticle2: {fileID: 0}
 --- !u!212 &4352016079313718285
 SpriteRenderer:
   m_ObjectHideFlags: 0

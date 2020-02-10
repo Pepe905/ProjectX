@@ -6,7 +6,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 
-    public Animator animator;
+    private Animator animator;
+    [SerializeField] private GameObject deathAnimation;
     public bool dead;
     [SerializeField] float health = 1;
     [SerializeField] private GameObject disappearParticle;
@@ -28,35 +29,11 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0 && animator.GetBool("isDead") == false)
         {
             hasDied = true;
-
-            print(animator.GetBool("isDead"));
-
-            animator.SetBool("isDead", true);
-
-            print(animator.GetBool("isDead"));
-
-            Debug.Log("Start death animation.");
+            //Instantate the Animation
+            Instantiate(deathAnimation, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
 
-    }
-    private void FixedUpdate()
-    {
-        if (dead)
-        {
-            Debug.Log("Remove enemy:" + gameObject.name);
-            //Destroy(gameObject);
-            Destroy(transform.parent.gameObject, 5);
-
-            GameObject spawnedParticle = Instantiate(disappearParticle, transform.position, transform.rotation);
-            //spawnedParticle.transform.parent = transform.root;
-            Destroy(spawnedParticle, 5);
-
-            /*Why does the 2nd added particlesystem not do anything?
-            GameObject spawnedParticle2 = Instantiate(disappearParticle2, transform.position, transform.rotation);
-            //spawnedParticle.transform.parent = transform.root;
-            Destroy(spawnedParticle2, 5);
-            */
-        }
     }
 
     //here starts the part that should help that the grenade damages/kills the zombie

@@ -123,7 +123,7 @@ public class EnemyMovement : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && enemyHealth.dead)
         {
             canFlip = true;
             charging = false;
