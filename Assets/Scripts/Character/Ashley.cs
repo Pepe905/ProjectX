@@ -21,12 +21,14 @@ public class Ashley : MonoBehaviour
     public Transform spawnPoint;
     public bool lookingleft = true;
     public int MaxAmmo = 15;
-    public int currentAmmo;
+    [SerializeField] private GameObject[] ammo;
+    private int currentAmmo;
     public float reloadTime = 1f;
     private bool isReloading = false;
     public float fireRate = 15f;
     private float nextTimeToFire = 0f;
 
+    
 
     [SerializeField] private float jumpCooldown = 1f;
     private bool canJump = true;
@@ -50,6 +52,13 @@ public class Ashley : MonoBehaviour
         characterSprite = GetComponent<SpriteRenderer>();
         currentAmmo = MaxAmmo;
 
+        for (int i = 0; i <= 2; i++) 
+        {
+            ammo[i].gameObject.SetActive(true);
+
+        }
+
+        
     }
 
     void OnEnable()
@@ -118,6 +127,13 @@ public class Ashley : MonoBehaviour
             currentAmmo = MaxAmmo;
             isReloading = false;
 
+            for (int i = 0; i <= 2; i++) 
+            {
+                ammo[i].gameObject.SetActive(true);
+
+            }
+
+
         }
 
         if (isReloading)
@@ -141,6 +157,7 @@ public class Ashley : MonoBehaviour
             currentAmmo--;
             isAttacking = true;
             nextTimeToFire = Time.time + 1f / fireRate;
+            ammo[currentAmmo].gameObject.SetActive(false);
         }
 
         if (isAttacking)

@@ -12,6 +12,7 @@ public class Patrone : MonoBehaviour
     public void Start()
     {
         startPoint = transform.position;
+        Destroy(gameObject, 10f);
     }
     public void Update()
     {
