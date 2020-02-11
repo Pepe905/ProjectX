@@ -96,9 +96,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: {fileID: 5267995147070933381}
   flipSprite: 0
-  enemyAccel: 5
-  maxSpeed: 5
-  chargeTime: 0.25
+  enemyAccel: 7
+  maxSpeed: 4
+  chargeTime: 0.05
   charging: 0
 --- !u!1 &6917474544422569545
 GameObject:
