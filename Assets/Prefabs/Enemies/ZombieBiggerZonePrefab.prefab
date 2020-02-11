@@ -150,7 +150,7 @@ MonoBehaviour:
     type: 3}
   dead: 0
   health: 1
-  disappearParticle: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  disappearParticle: {fileID: 0}
 --- !u!212 &4352016079313718285
 SpriteRenderer:
   m_ObjectHideFlags: 0
