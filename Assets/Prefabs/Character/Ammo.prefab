@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  range: 10
+  range: 5
 --- !u!82 &7296562154699531112
 AudioSource:
   m_ObjectHideFlags: 0
