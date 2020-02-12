@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcfbbfd6579928489b4f5c6becb694d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDamaged: {fileID: 8300000, guid: 900ba65ecf08781448524509e1cc9b0f, type: 3}
+  playerDamaged: {fileID: 8300000, guid: 0c4401ebbb7d173479cd189fd696d699, type: 3}
   fullHealth: 10
   playerDeathFX: {fileID: 1625238470827834, guid: 3fc5176cc8b83f348840233dcf2c569a,
     type: 3}
