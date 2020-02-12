@@ -4765,6 +4765,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4836,7 +4837,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 900ba65ecf08781448524509e1cc9b0f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6f0ac23e697dc64498a8803ee1560a20, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
