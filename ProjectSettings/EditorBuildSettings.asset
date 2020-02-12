@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VFX.unity
     guid: 94169f609de72ac49aad4a52821b636a
+  - enabled: 1
+    path: Assets/Scenes/Steuerung.unity
+    guid: de9599793d5031e428583a98c29f0f80
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: c810383f057f5754a9fe01c846b7abab
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: d5cf660ff9e67924b8350c6bef75c9c4
   m_configObjects: {}

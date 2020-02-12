@@ -30,8 +30,8 @@ public class Trophyscript : MonoBehaviour
             // Player
             if (other.gameObject.tag == "Player")
             {
-                ontrophy = true; 
-                Debug.Log("Ashley erreicht eine Trophy");
+                ontrophy = true;
+                Debug.Log("Hallo");
             //Item
                 gameObject.SetActive(false);
                 
