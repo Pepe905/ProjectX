@@ -9,23 +9,27 @@ public class EnemyDamage : MonoBehaviour {
 	public float damage;
 	public float damageRate;
 	public float pushBackForce;
-
 	float nextDamage;
+	Animator enemyAC;
 
 	// Use this for initialization
 	void Start () {
 		nextDamage = Time.time;
+		enemyAC = transform.parent.GetComponentInChildren<Animator>();
+		//Debug.Log(enemyAC);
 	}
 
 	void OnTriggerStay2D(Collider2D other){
 		if (enemyHealth.hasDied)
 			return;
 
-		if (other.tag == "Player" && nextDamage < Time.time) {
+		if (other.tag == "Player" && nextDamage < Time.time)
+		{
 			playerHealth thePlayerHealth = other.gameObject.GetComponent<playerHealth> ();
 			thePlayerHealth.addDamage (damage);
 			nextDamage = Time.time + damageRate;
 			PushBack (other.transform);
+			enemyAC.SetTrigger("isAttacking");
 		}
 	}
 
