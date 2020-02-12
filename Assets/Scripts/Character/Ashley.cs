@@ -187,7 +187,7 @@ public class Ashley : MonoBehaviour
 
         //Jump
 
-        else if (Input.GetKeyDown("space") && m_grounded)
+        else if (Input.GetKeyDown(KeyCode.W) && m_grounded)
         {
 
             m_animator.SetTrigger("isjumping");

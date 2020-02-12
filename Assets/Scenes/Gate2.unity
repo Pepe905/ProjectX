@@ -30612,6 +30612,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.36
       objectReference: {fileID: 0}
+    - target: {fileID: 7764675657936167103, guid: 05b0ffad30e060c4ab82cbda7dc84d54,
+        type: 3}
+      propertyPath: isPaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438807058351681427, guid: 05b0ffad30e060c4ab82cbda7dc84d54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05b0ffad30e060c4ab82cbda7dc84d54, type: 3}
 --- !u!4 &1255682987 stripped
@@ -36851,7 +36861,7 @@ PrefabInstance:
         type: 3}
       propertyPath: rubyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1459578875}
     - target: {fileID: 726164569486172500, guid: 208358cf9271ad046b01dfefc315234e,
         type: 3}
       propertyPath: endGameCanvas
