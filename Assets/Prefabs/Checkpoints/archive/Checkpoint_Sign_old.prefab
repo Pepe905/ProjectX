@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1410037853217107078}
   - component: {fileID: 6476747998128948655}
   m_Layer: 0
-  m_Name: Checkpoint_Sign
+  m_Name: Checkpoint_Sign_old
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -68,6 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c875ab031ecb74fbdf8182f28e9fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkpointActivated: {fileID: 8300000, guid: 0f9fd4426dd656545a149db2e080d864, type: 3}
+  disappearParticle: {fileID: 0}
 --- !u!114 &6476747998128948655
 MonoBehaviour:
   m_ObjectHideFlags: 0
