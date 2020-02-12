@@ -22,13 +22,10 @@ public class ThrowGrenadeScript : MonoBehaviour
 
     {
             currentAmmo = MaxAmmo;
-
         for (int i = 0; i <= 2; i++)
         {
             ammo[i].gameObject.SetActive(true);
-            nextTimeToFire = Time.time + 1f / fireRate;
-            
-
+           
         }
     }
 
@@ -40,6 +37,7 @@ public class ThrowGrenadeScript : MonoBehaviour
         {
             GameObject gren = Instantiate(grenadePrefab, hand.position, hand.rotation);
             gren.GetComponent<Rigidbody2D>().velocity = grenadeStartVelocity;
+            nextTimeToFire = Time.time + 1f / fireRate;
             currentAmmo--;
             ammo[currentAmmo].gameObject.SetActive(false);
 

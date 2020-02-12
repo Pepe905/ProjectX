@@ -38974,6 +38974,11 @@ PrefabInstance:
       propertyPath: ammo.Array.data[4]
       value: 
       objectReference: {fileID: 79709853}
+    - target: {fileID: 9103152914132882920, guid: 208358cf9271ad046b01dfefc315234e,
+        type: 3}
+      propertyPath: fireRate
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5025585433337960113, guid: 208358cf9271ad046b01dfefc315234e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 208358cf9271ad046b01dfefc315234e, type: 3}
