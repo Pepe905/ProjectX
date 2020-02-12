@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7225900355127314827}
   - component: {fileID: 9082741706418145906}
   - component: {fileID: 1157772852140672826}
-  - component: {fileID: -5944281681349847240}
+  - component: {fileID: 5699244080748202671}
   m_Layer: 10
-  m_Name: EnemySkullFlyingPrefab
+  m_Name: EnemySkullJumpingPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
   maxSpeed: 5
   chargeTime: 0.25
   charging: 0
---- !u!50 &-5944281681349847240
+--- !u!50 &5699244080748202671
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   enemyHealth: {fileID: 5267995147070933381}
   damage: 1
   damageRate: 1
-  pushBackForce: 0
+  pushBackForce: 15
 --- !u!1001 &3521979317802610034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,6 +326,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7362584
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67670053
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06962862
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902756447578069107, guid: a81d30dee7d1cdb44aaf9348d743a889,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1437539
       objectReference: {fileID: 0}
     - target: {fileID: -2814632609929937574, guid: a81d30dee7d1cdb44aaf9348d743a889,
         type: 3}
