@@ -97,8 +97,8 @@ MonoBehaviour:
   enemyHealth: {fileID: 5267995147070933381}
   flipSprite: 0
   enemyAccel: 7
-  maxSpeed: 4
-  chargeTime: 0.05
+  maxSpeed: 3.5
+  chargeTime: -71.46
   charging: 0
 --- !u!1 &6917474544422569545
 GameObject:
